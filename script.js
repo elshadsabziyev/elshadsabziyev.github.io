@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const expandableContents = document.querySelectorAll('.expandable-content');
 
     expandableContents.forEach(content => {
-        const header = content.querySelector('h3');
+        const header = content;
         const hiddenContent = content.querySelector('.hidden-content');
         const expandIcon = content.querySelector('.expand-icon');
 
@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 expandIcon.textContent = 'expand_more';
             }
 
-            // Log for debugging
-            console.log('Clicked:', header.textContent);
-            console.log('Expanded:', content.classList.contains('expanded'));
         });
     });
 });

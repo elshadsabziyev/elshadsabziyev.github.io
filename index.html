@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body onmousedown="return false" onselectstart="return false">
     <div class="container">
         <aside class="sidebar">
             <div class="profile">
@@ -25,32 +25,48 @@
                 <div class="contact">
                     <p class="contact-header"><i class="fas fa-address-card"></i> <span class="header">Contact</span>
                     </p>
-                    <p class="contact-content"><i class="fas fa-map-marker-alt"></i> Sumgayit, Azerbaijan</p>
-                    <p class="contact-content"><i class="fas fa-envelope"></i> elshadsabziyev@gmail.com</p>
-                    <p class="contact-content"><i class="fas fa-link"></i> elshadsabziyev.link</p>
+                    <p class="contact-content"><i class="fas fa-map-marker-alt"></i><span class="haha"> Sumgayit,
+                            Azerbaijan</span></p>
+                    <p class="contact-content"><i class="fas fa-envelope"></i><span class="haha">
+                            elshadsabziyev@gmail.com </span></p>
+                    <p class="contact-content"><i class="fas fa-link"></i><span class="haha"> <a class="link"
+                                href="https://elshadsabziyev.link">elshadsabziyev.link</a></span></p>
                 </div>
                 <div class="education">
                     <p class="education-header"><i class="fas fa-graduation-cap"></i><span class="header">
                             Education</span></p>
-                    <p class="education-content">Baku Higher Oil School</p>
-                    <p class="education-content">BSc - Process Automation Engineering</p>
-                    <p class="education-content">2020 - 2025</p>
+                    <p class="education-content"><i class="fas fa-university"></i><span class="haha"> Baku Higher Oil
+                            School</span></p>
+                    <p class="education-content"><i class="fas fa-atom"></i><span class="haha"> BSc - Process Automation
+                            Eng.</span></p>
+                    <p class="education-content"><i class="fas fa-calendar-alt"></i><span class="haha"> 2020 - 2025
+                        </span></p>
                 </div>
                 <div class="languages">
-                    <p class="languages-header"><i class="fas fa-language"></i><span class="header"> Languages</span>
-                    </p>
-                    <p class="languages-content"><span class="flag-icon flag-icon-az"></span> <span
-                            class="language-name"> Azerbaijani </span>
-                        <span class="languages-level">(Native - Bilingual)</span>
-                    </p>
-                    <p class="languages-content"><span class="flag-icon flag-icon-gb"></span><span
-                            class="language-name"> English </span>
-                        <span class="languages-level">(Prof. Working Proficiency)</span>
-                    </p>
-                    <p class="languages-content"><span class="flag-icon flag-icon-tr"></span><span
-                            class="language-name"> Turkish</span>
-                        <span class="languages-level">(Fluent)</span>
-                    </p>
+                    <div class="languages-header">
+                        <i class="fas fa-language"></i><span class="header"> Languages</span>
+                    </div>
+                    <div class="languages-content">
+                        <div class="language-info">
+                            <span class="flag-icon flag-icon-az"></span>
+                            <span class="language-name"> Azerbaijani </span>
+                        </div>
+                        <div class="languages-level">(Native - Bilingual)</div>
+                    </div>
+                    <div class="languages-content">
+                        <div class="language-info">
+                            <span class="flag-icon flag-icon-gb"></span>
+                            <span class="language-name"> English </span>
+                        </div>
+                        <div class="languages-level">(Prof. Working Proficiency)</div>
+                    </div>
+                    <div class="languages-content">
+                        <div class="language-info">
+                            <span class="flag-icon flag-icon-tr"></span>
+                            <span class="language-name"> Turkish</span>
+                        </div>
+                        <div class="languages-level">(Prof. Working Proficiency)</div>
+                    </div>
                 </div>
             </div>
 
@@ -145,8 +161,42 @@
                         </div>
                     </div>
                 </div>
-
-
+            </section>
+            <section>
+                <div class="section-header">
+                    <h2>Lorem Ipsum Section</h2>
+                </div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                        tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                    </p>
+                    <ul>
+                        <li>Maecenas ligula massa, varius a, semper congue, euismod non, mi.</li>
+                        <li>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
+                            sit amet erat.</li>
+                        <li>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</li>
+                        <li>Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</li>
+                    </ul>
+                    <p class="other-intern">Cras vitae metus aliquam risus pellentesque pharetra.</p>
+                </div>
+            </section>
+            <section>
+                <div class="section-header">
+                    <h2>Lorem Ipsum Section</h2>
+                </div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                        tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                    </p>
+                    <ul>
+                        <li>Maecenas ligula massa, varius a, semper congue, euismod non, mi.</li>
+                        <li>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
+                            sit amet erat.</li>
+                        <li>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</li>
+                        <li>Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</li>
+                    </ul>
+                    <p class="other-intern">Cras vitae metus aliquam risus pellentesque pharetra.</p>
+                </div>
             </section>
         </main>
         <main class="main-content">
@@ -254,15 +304,45 @@
                     <script src="script.js"></script>
                 </div>
             </section>
+            <section>
+                <div class="section-header">
+                    <h2>Lorem Ipsum Section</h2>
+                </div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                        tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                    </p>
+                    <ul>
+                        <li>Maecenas ligula massa, varius a, semper congue, euismod non, mi.</li>
+                        <li>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
+                            sit amet erat.</li>
+                        <li>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</li>
+                        <li>Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</li>
+                    </ul>
+                    <p class="other-intern">Cras vitae metus aliquam risus pellentesque pharetra.</p>
+                </div>
+            </section>
+            <section>
+                <div class="section-header">
+                    <h2>Lorem Ipsum Section</h2>
+                </div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+                        tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                    </p>
+                    <ul>
+                        <li>Maecenas ligula massa, varius a, semper congue, euismod non, mi.</li>
+                        <li>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
+                            sit amet erat.</li>
+                        <li>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</li>
+                        <li>Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</li>
+                    </ul>
+                    <p class="other-intern">Cras vitae metus aliquam risus pellentesque pharetra.</p>
+                </div>
+            </section>
         </main>
     </div>
-    <footer>
-        <div class="footer">
-            <p>UNDER CONSTRUCTION - ELSHAD SABZIYEV - 2024
 
-            </p>
-        </div>
-    </footer>
 
 </body>
 
