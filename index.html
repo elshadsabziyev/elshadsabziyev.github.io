@@ -17,7 +17,7 @@
 
 </head>
 
-<body onmousedown="return false" onselectstart="return false">
+<body onmousedown="return false" onselectstart="return false", oncontextmenu="return false">
     <div class="container">
         <aside class="sidebar">
             <div class="profile">
@@ -398,36 +398,6 @@
 
         </main>
     </div>
-    <script>
-        // Disable context menu (right-click menu)
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        // Disable long-press menu on mobile
-        document.addEventListener('touchstart', function (e) {
-            e.preventDefault();
-        }, { passive: false });
-
-        // Re-enable normal touch behavior for links
-        document.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('touchstart', function (e) {
-                e.stopPropagation();
-            }, { passive: true });
-        });
-
-        // Prevent zooming on double-tap (for iOS Safari)
-        document.addEventListener('touchend', function (e) {
-            var now = Date.now();
-            var lastTouch = this.lastTouch || now + 1;
-            var delta = now - lastTouch;
-            if (delta < 500 && delta > 0) {
-                e.preventDefault();
-                e.target.click();
-            }
-            this.lastTouch = now;
-        }, false);
-    </script>
 
 </body>
 
