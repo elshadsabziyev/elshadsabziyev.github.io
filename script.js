@@ -11,12 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (content.classList.contains('expanded')) {
                 hiddenContent.style.maxHeight = hiddenContent.scrollHeight + "px";
-                expandIcon.textContent = 'expand_less';
+                if (expandIcon) expandIcon.textContent = 'expand_less';
             } else {
                 hiddenContent.style.maxHeight = null;
-                expandIcon.textContent = 'expand_more';
+                if (expandIcon) expandIcon.textContent = 'expand_more';
             }
-
         });
     });
 });
