@@ -11,7 +11,6 @@
     --text-background-color: #ebdbb2;
 }
 
-/* Disable tap highlight color on mobile */
 * {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -54,7 +53,6 @@ body {
 .sidebar:hover {
     box-shadow: 0 4px 20px var(--secondary-color), 0 8px 40px rgba(0, 0, 0, 0.675);
     transform: scale(1.005);
-
 }
 
 .profile {
@@ -102,7 +100,6 @@ body {
     padding-bottom: 20px;
     padding-top: 10px;
     text-align: center;
-
 }
 
 .main-content {
@@ -149,7 +146,6 @@ h3 {
 
     scale: 1.005;
     cursor: pointer;
-
 }
 
 .expandable-content h3 {
@@ -208,7 +204,6 @@ section:hover {
     transform: scale(1.005);
 }
 
-
 .skills-content {
     padding: 20px;
     background-color: var(--card-color);
@@ -224,7 +219,6 @@ section:hover {
     border: 2px dashed var(--secondary-color);
 }
 
-
 .other-intern {
     font-size: 18px;
     font-weight: bold;
@@ -233,13 +227,9 @@ section:hover {
     padding: 5px;
 }
 
-
-
-
 html {
     overflow-y: scroll;
 }
-
 
 .header {
     text-transform: uppercase;
@@ -293,7 +283,6 @@ html {
 .haha {
     text-align: center;
     display: block;
-    /* Makes sure the text is centered in the available space */
 }
 
 .language-info {
@@ -304,9 +293,9 @@ html {
 
 .flag-icon {
     margin-right: 2px;
-    /* Adjust spacing between flag and name */
     font-size: 16px;
     font-weight: bold;
+    box-shadow: 0 0.1px 2px rgba(0, 0, 0, 0.2), 0 0.2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .languages-level {
@@ -358,4 +347,15 @@ html {
     .linkb:hover {
         border-bottom-color: currentColor;
     }
+}
+
+.skills h4 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skills h4:first-of-type {
+    margin-top: 0;
 }
